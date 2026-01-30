@@ -23,6 +23,10 @@ const navItems = [
   { href: "/tools/review-reply", label: "리뷰답글생성기" },
   { href: "/tools/labor", label: "인건비계산기" },
   { href: "/tools/schedule", label: "근무표생성기" },
+  { href: "/tools/tax", label: "세금/부가세" },
+  { href: "/tools/price-psych", label: "가격심리" },
+  { href: "/tools/retention", label: "리텐션플랜" },
+  { href: "/tools/store-diagnosis", label: "매장진단하기" },
 ];
 
 export default function RootLayout({

@@ -1,0 +1,79 @@
+.cafeops {
+  color-scheme: light;
+  --bg: var(--background);
+  --bg-2: var(--surface-strong);
+  --ink: var(--foreground);
+  --ink-2: var(--muted);
+  --card: rgba(255, 255, 255, 0.92);
+  --line: rgba(226, 232, 240, 0.9);
+  --accent-2: #2b7a6b;
+  --warning: #c2410c;
+  --shadow:
+    0 1px 2px rgba(20, 18, 10, 0.08),
+    0 16px 40px rgba(20, 18, 10, 0.12);
+  min-height: 100vh;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-sans), sans-serif;
+}
+
+.cafeops .text-ink {
+  color: var(--ink);
+}
+
+.cafeops .text-ink-muted {
+  color: var(--ink-2);
+}
+
+.cafeops .card-surface {
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.cafeops .accent {
+  color: var(--accent);
+}
+
+.cafeops .accent-2 {
+  color: var(--accent-2);
+}
+
+.cafeops .font-display {
+  font-family: var(--font-display), "Times New Roman", serif;
+}
+
+.cafeops .print-only {
+  display: none;
+}
+
+.cafeops details summary {
+  list-style: none;
+}
+
+.cafeops details summary::-webkit-details-marker {
+  display: none;
+}
+
+.cafeops .summary-chevron svg {
+  transition: transform 0.2s ease;
+}
+
+.cafeops details[open] .summary-chevron svg {
+  transform: rotate(180deg);
+}
+
+@media print {
+  .cafeops {
+    background: white;
+  }
+
+  .cafeops .no-print {
+    display: none !important;
+  }
+
+  .cafeops .print-only {
+    display: block !important;
+  }
+}
