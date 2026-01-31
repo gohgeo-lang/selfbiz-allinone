@@ -51,7 +51,7 @@ export default function Home() {
           <h1 className="font-display text-4xl leading-tight md:text-6xl">
             자영업자의 하루를
             <span className="block text-[var(--accent-strong)]">
-              빠르게 자동화하는 올인원
+              빠르게 정리하는 올인원
             </span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-[var(--muted)]">

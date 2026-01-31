@@ -1346,7 +1346,7 @@ export default function OverheadForm({ initial, onSave, onCancel }: OverheadForm
               <details
                 key={item.id || index}
                 className="rounded-xl border border-[var(--line)] bg-white p-3"
-                defaultOpen={!item.name && !item.totalRepayment}
+                open={!item.name && !item.totalRepayment}
               >
                 <summary className="flex cursor-pointer items-center justify-between text-sm font-semibold text-ink">
                   <span>{item.name || "시설 품목"}</span>
